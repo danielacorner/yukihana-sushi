@@ -1,0 +1,23 @@
+li.active {
+  pointer-events: none;
+  position: relative;
+}
+li.active a {
+  color: white;
+}
+li.active::after {
+  position: absolute;
+  content: "";
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: white;
+}
+li.active.button a {
+  background: grey;
+  border: 1px solid grey;
+}
+li.active.button::after {
+  display: none;
+}

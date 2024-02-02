@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Sushi Restaurant</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+    <style>
+      body {
+        font-family: "Open+Sans", sans-serif;
+      }
+      .relative-container {
+        position: relative;
+        padding: 1em;
+        margin: 1em 0;
+      }
+      .background-image {
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.5;
+      }
+      .hours {
+        color: #fff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        margin: 0;
+        z-index: 2;
+        position: relative;
+      }
+      .hours.today {
+        font-weight: bold;
+        transform: scale(1.2);
+        transform-origin: left;
+      }
+      iframe {
+        display: block;
+        margin: 2em auto;
+        max-width: 100%;
+        border: 0;
+      }
+      .container {
+        position: relative;
+        z-index: 2;
+      }
+    </style>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body class="bg-white text-gray-800">
+    <nav class="container-fluid">
+      <ul>
+        <li><strong>Yukihana Sushi</strong></li>
+      </ul>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/menu">Menu</a></li>
+        <li class="active button">
+          <a href="/contact" role="button">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container mx-auto px-4 py-8">
+      <div class="flex flex-wrap">
+        <div class="w-full lg:w-1/2">
+          <div class="relative-container">
+            <img
+              src="/images/contact_us_image.jpg"
+              alt="Front of Restaurant"
+              class="background-image rounded"
+            />
+            <div style="margin-top: 8em">
+              <h2 class="text-xl font-semibold mb-3">Opening Hours</h2>
+              <p class="hours Sunday">Sunday - Closed</p>
+              <p class="hours Monday">Monday - Closed</p>
+              <p class="hours Tuesday">
+                Tuesday 11:30 a.m.–3 p.m., 4:30–9 p.m.
+              </p>
+              <p class="hours Wednesday">
+                Wednesday 11:30 a.m.–3 p.m., 4:30–9 p.m.
+              </p>
+              <p class="hours Thursday">
+                Thursday 11:30 a.m.–3 p.m., 4:30–9 p.m.
+              </p>
+              <p class="hours Friday">Friday 11:30 a.m.–3 p.m., 4:30–9 p.m.</p>
+              <p class="hours Saturday">
+                Saturday 11:30 a.m.–3 p.m., 4:30–9 p.m.
+              </p>
+            </div>
+          </div>
+          <p>
+            Email us at:
+            <a href="mailto:yukizang0318@gmail.com" class="text-blue-500"
+              >yukizang0318@gmail.com</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Facebook</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </p>
+        </div>
+        <div class="w-full lg:w-1/2">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2826.0729809559443!2d-76.02343532375653!3d44.901511171070375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccd89d32e73a24b%3A0x18ff22535b4738b2!2sYUKIHANA%20SUSHI!5e0!3m2!1sen!2sus!4v1706911588491!5m2!1sen!2sus"
+            width="600"
+            height="450"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <script>
+      // set active weekday to "today" class
+      const today = new Date().getDay();
+      const weekdays = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ];
+      document.querySelector(`.${weekdays[today]}`).classList.add("today");
+    </script>
+  </body>
+</html>
