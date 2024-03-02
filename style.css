@@ -21,3 +21,10 @@ li.active.button a {
 li.active.button::after {
   display: none;
 }
+html {
+  background: black;
+  color: white;
+}
+html *:not(a) {
+  color: white;
+}
