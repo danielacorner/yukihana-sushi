@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us - Sushi Restaurant</title>
+    <title>Contact Us - Yukihana Sushi Restaurant</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
       rel="stylesheet"
@@ -41,6 +41,7 @@
       .hours.today {
         font-weight: bold;
         font-size: 1.25em;
+        line-height: 1.1em;
       }
       iframe {
         display: block;
@@ -58,10 +59,9 @@
   <body class="bg-white text-gray-800">
     <nav class="container-fluid">
       <ul>
-        <li><strong>Yukihana Sushi</strong></li>
+        <a href="/"><strong>Yukihana Sushi</strong></a>
       </ul>
       <ul>
-        <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/menu">Menu</a></li>
         <li class="active button">
@@ -82,50 +82,62 @@
               <h2 class="text-xl font-semibold mb-3">Opening Hours</h2>
               <p class="hours Sunday">Sunday - Closed</p>
               <p class="hours Monday">Monday - Closed</p>
-              <p class="hours Tuesday">
-                Tuesday 11:30 a.m.–3 p.m., 4:30–9 p.m.
-              </p>
-              <p class="hours Wednesday">
-                Wednesday 11:30 a.m.–3 p.m., 4:30–9 p.m.
-              </p>
-              <p class="hours Thursday">
-                Thursday 11:30 a.m.–3 p.m., 4:30–9 p.m.
-              </p>
-              <p class="hours Friday">Friday 11:30 a.m.–3 p.m., 4:30–9 p.m.</p>
-              <p class="hours Saturday">
-                Saturday 11:30 a.m.–3 p.m., 4:30–9 p.m.
-              </p>
+              <p class="hours Tuesday">Tuesday 11:30am–3pm, 4:30–9pm</p>
+              <p class="hours Wednesday">Wednesday 11:30am–3pm, 4:30–9pm</p>
+              <p class="hours Thursday">Thursday 11:30am–3pm, 4:30–9pm</p>
+              <p class="hours Friday">Friday 11:30am–3pm, 4:30–9pm</p>
+              <p class="hours Saturday">Saturday 11:30am–3pm, 4:30–9pm</p>
             </div>
           </div>
-          <p>
-            Call us at:
-            <a href="tel:6132830699" class="text-blue-500"
-              >(613) 283-0699</a
-            >
-          </p>
-          <p>
-            Email us at:
-            <a href="mailto:yukizang0318@gmail.com" class="text-blue-500"
-              >yukizang0318@gmail.com</a
-            >
-          </p>
-          <p>
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Facebook</a
-            >
-          </p>
-          <p>
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Instagram</a
-            >
-          </p>
+          <br />
+          <div
+            style="
+              margin: 0 0.5em;
+              display: grid;
+              grid-template-columns: auto auto;
+              grid-gap: 0em 1em;
+            "
+          >
+            <p>
+              <i class="fa-solid fa-phone"></i>&nbsp;
+              <a href="tel:6132830699" class="text-blue-500">(613) 283-0699</a>
+            </p>
+            <p>
+              <i class="fa-solid fa-envelope"></i>&nbsp;
+              <a href="mailto:yukizang0318@gmail.com" class="text-blue-500"
+                >yukizang0318@gmail.com</a
+              >
+            </p>
+            <p>
+              <i class="fa-brands fa-facebook"></i>&nbsp;
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Facebook</a
+              >
+            </p>
+            <p>
+              <i class="fa-brands fa-instagram"></i>&nbsp;
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Instagram</a
+              >
+            </p>
+          </div>
         </div>
+        <p style="width: fit-content; margin: 0 0.5em 1em">
+          <i class="fa-solid fa-location-dot"></i>&nbsp;
+          <a
+            href="https://www.google.com/maps/place/Canada,+Ontario,+Smiths+Falls,+Russell+St+E,+YUKIHANA+SUSHI/@44.901511,-76.02086,16z/data=!4m6!3m5!1s0x4ccd89d32e73a24b:0x18ff22535b4738b2!8m2!3d44.9015112!4d-76.0208604!16s%2Fg%2F11krflh0_4"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            6 Russell St E, Smiths Falls, ON K7A 1E8
+          </a>
+        </p>
         <div class="w-full lg:w-1/2">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2826.0729809559443!2d-76.02343532375653!3d44.901511171070375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccd89d32e73a24b%3A0x18ff22535b4738b2!2sYUKIHANA%20SUSHI!5e0!3m2!1sen!2sus!4v1706911588491!5m2!1sen!2sus"
@@ -151,5 +163,9 @@
       ];
       document.querySelector(`.${weekdays[today]}`).classList.add("today");
     </script>
+    <script
+      src="https://kit.fontawesome.com/a2f5a66a0f.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
