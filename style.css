@@ -40,3 +40,6 @@ nav ul:first-of-type {
 footer.container {
   padding: 0;
 }
+h2 {
+  margin-bottom: 0.5em;
+}
