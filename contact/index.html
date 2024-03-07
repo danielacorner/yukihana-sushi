@@ -46,8 +46,20 @@
         position: relative;
         z-index: 2;
       }
-      .content a * {
+      .content a p {
         color: #1095c1 !important;
+      }
+      .content a p,
+      .content a p i,
+      .content a p img {
+        transition: color 0.3s ease;
+      }
+      .content a p:hover {
+        color: hsl(195, 80%, 50%) !important;
+      }
+      .content a p:hover i,
+      .content a p:hover img {
+        color: hsl(195, 51%, 77%) !important;
       }
       p {
         margin-bottom: 0;
