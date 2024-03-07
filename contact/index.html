@@ -49,19 +49,36 @@
       .content a * {
         color: #1095c1 !important;
       }
+      p {
+        margin-bottom: 0;
+      }
+      .contact-grid {
+        margin: 0 0.5em;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-row-gap: 1em;
+        margin-bottom: 2em;
+      }
     </style>
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
     <nav class="container-fluid">
       <ul>
-        <a href="/"><strong>Yukihana Sushi</strong></a>
+        <li>
+          <a href="/"><strong>Yukihana Sushi</strong></a>
+        </li>
       </ul>
       <ul>
         <li><a href="/about">About</a></li>
-        <li><a href="/menu">Menu</a></li>
-        <li class="active button">
-          <a href="/contact" role="button">Contact</a>
+        <li>
+          <a href="/menu">Menu</a>
+        </li>
+        <li class="active"><a href="/contact">Contact</a></li>
+        <li class="button">
+          <a href="tel:6132830699" class="call-button" role="button">
+            <i class="fa-solid fa-phone"></i>
+          </a>
         </li>
       </ul>
     </nav>
@@ -86,18 +103,19 @@
             </div>
           </div>
           <br />
-          <div
-            style="
-              margin: 0 0.5em;
-              display: grid;
-              grid-template-columns: auto auto;
-              grid-gap: 0em 1em;
-            "
-          >
-            <a href="tel:6132830699" class="text-blue-500">
+          <div class="contact-grid">
+            <a
+              href="tel:6132830699"
+              class="text-blue-500"
+              style="grid-column: 1 / -1"
+            >
               <p><i class="fa-solid fa-phone"></i>&nbsp; (613) 283-0699</p>
             </a>
-            <a href="mailto:yukizang0318@gmail.com" class="text-blue-500">
+            <a
+              href="mailto:yukizang0318@gmail.com"
+              class="text-blue-500"
+              style="grid-column: 1 / -1; margin-bottom: 1em"
+            >
               <p>
                 <i class="fa-solid fa-envelope"></i>&nbsp;
                 yukizang0318@gmail.com
@@ -147,6 +165,7 @@
               width: fit-content;
               margin: 0 0.5em 1em 6px;
               padding-left: 4px;
+              word-break: break-all;
             "
           >
             <p>
@@ -229,15 +248,20 @@
     <footer class="container" style="margin-top: 2em">
       <nav class="container-fluid">
         <ul>
-          <a href="/"><strong>Yukihana Sushi</strong></a>
+          <li>
+            <a href="/"><strong>Yukihana Sushi</strong></a>
+          </li>
         </ul>
         <ul>
           <li><a href="/about">About</a></li>
           <li>
             <a href="/menu">Menu</a>
           </li>
-          <li class="button active">
-            <a href="/contact" role="button">Contact</a>
+          <li class="active"><a href="/contact">Contact</a></li>
+          <li class="button">
+            <a href="tel:6132830699" class="call-button" role="button">
+              <i class="fa-solid fa-phone"></i>
+            </a>
           </li>
         </ul>
       </nav>

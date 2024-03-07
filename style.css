@@ -32,7 +32,23 @@ html *:not(a) {
   color: white;
 }
 nav ul {
-  gap: 0.5em;
+  gap: 0em;
+  display: flex;
+  align-items: center;
+}
+nav ul:first-child {
+  margin-right: 1em;
+}
+li.button {
+  display: flex;
+  align-items: center;
+}
+.call-button {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 nav ul:first-of-type {
   margin-left: 0;
