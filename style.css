@@ -1,3 +1,6 @@
+p {
+  margin-bottom: 0;
+}
 li.active {
   pointer-events: none;
   position: relative;
@@ -36,6 +39,7 @@ nav ul {
   display: flex;
   align-items: center;
 }
+
 nav ul:first-child {
   margin-right: 1em;
 }
@@ -58,4 +62,12 @@ footer.container {
 }
 h2 {
   margin-bottom: 0.5em;
+}
+.content a i {
+  color: #f8f0fb !important;
+}
+@media (min-width: 768px) {
+  nav ul {
+    gap: 1em;
+  }
 }

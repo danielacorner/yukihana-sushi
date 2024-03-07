@@ -59,11 +59,38 @@
         grid-row-gap: 1em;
         margin-bottom: 2em;
       }
+
+      .contact-grid a:first-child {
+        grid-column: 1 / -1;
+      }
+      .contact-grid a:nth-child(1) {
+        grid-column: 1 / -1;
+      }
+      .address {
+        width: fit-content;
+        margin: 0 0.5em 1em 6px;
+        padding-left: 4px;
+        word-break: break-all;
+      }
+      @media (min-width: 768px) {
+        .address {
+          margin: auto;
+        }
+        .contact-grid {
+          justify-content: space-evenly;
+        }
+        .contact-grid a:first-child {
+          grid-column: 1;
+        }
+        .contact-grid a:nth-child(1) {
+          grid-column: 1;
+        }
+      }
     </style>
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <nav class="container-fluid">
+    <nav class="container">
       <ul>
         <li>
           <a href="/"><strong>Yukihana Sushi</strong></a>
@@ -104,17 +131,13 @@
           </div>
           <br />
           <div class="contact-grid">
-            <a
-              href="tel:6132830699"
-              class="text-blue-500"
-              style="grid-column: 1 / -1"
-            >
+            <a href="tel:6132830699" class="text-blue-500">
               <p><i class="fa-solid fa-phone"></i>&nbsp; (613) 283-0699</p>
             </a>
             <a
               href="mailto:yukizang0318@gmail.com"
               class="text-blue-500"
-              style="grid-column: 1 / -1; margin-bottom: 1em"
+              style="margin-bottom: 1em"
             >
               <p>
                 <i class="fa-solid fa-envelope"></i>&nbsp;
@@ -160,14 +183,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div
-            style="
-              width: fit-content;
-              margin: 0 0.5em 1em 6px;
-              padding-left: 4px;
-              word-break: break-all;
-            "
-          >
+          <div class="address">
             <p>
               <i class="fa-solid fa-location-dot"></i>&nbsp; 6 Russell St E,
               Smiths Falls, ON K7A 1E8

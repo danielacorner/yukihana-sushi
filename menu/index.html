@@ -13,10 +13,18 @@
   <body>
     <style>
       .grid {
+        grid-gap: 0.5em;
         row-gap: 2em;
+        align-items: center;
+      }
+      @media (min-width: 768px) {
+        .grid {
+          grid-gap: 2em;
+          grid-template-columns: auto auto;
+        }
       }
     </style>
-    <nav class="container-fluid">
+    <nav class="container">
       <ul>
         <li>
           <a href="/"><strong>Yukihana Sushi</strong></a>
@@ -36,7 +44,7 @@
       </ul>
     </nav>
     <main class="container" style="padding-top: 0; padding-bottom: 0">
-      <div class="grid" style="grid-gap: 0.5em">
+      <div class="grid">
         <div>
           <a
             href="/images/menu/menu_1.jpg"
