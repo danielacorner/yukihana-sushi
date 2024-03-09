@@ -1,3 +1,6 @@
+p {
+  margin-bottom: 0;
+}
 li.active {
   pointer-events: none;
   position: relative;
@@ -20,4 +23,51 @@ li.active.button a {
 }
 li.active.button::after {
   display: none;
+}
+html {
+  background: black;
+  color: white;
+  font-family: "Open Sans", "Helvetica Neue", system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    sans-serif;
+}
+html *:not(a) {
+  color: white;
+}
+nav ul {
+  gap: 0em;
+  display: flex;
+  align-items: center;
+}
+
+nav ul:first-child {
+  margin-right: 1em;
+}
+li.button {
+  display: flex;
+  align-items: center;
+}
+.call-button {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav ul:first-of-type {
+  margin-left: 0;
+}
+footer.container {
+  padding: 0;
+}
+h2 {
+  margin-bottom: 0.5em;
+}
+.content a i {
+  color: #f8f0fb !important;
+}
+@media (min-width: 768px) {
+  nav ul {
+    gap: 1em;
+  }
 }

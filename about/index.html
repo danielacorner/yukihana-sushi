@@ -9,62 +9,128 @@
     />
     <title>Menu - Yukihana Sushi</title>
     <link rel="stylesheet" href="/style.css" />
+    <style>
+      .grid {
+        display: flex;
+        flex-direction: column;
+        gap: 4em;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
   </head>
   <body>
     <nav class="container-fluid">
       <ul>
-        <li><strong>Yukihana Sushi</strong></li>
+        <li>
+          <a href="/"><strong>Yukihana Sushi</strong></a>
+        </li>
       </ul>
       <ul>
-        <li><a href="/">Home</a></li>
         <li class="active"><a href="/about">About</a></li>
         <li>
           <a href="/menu">Menu</a>
         </li>
+        <li><a href="/contact">Contact</a></li>
         <li class="button">
-          <a href="/contact" role="button">Contact</a>
+          <a href="tel:6132830699" class="call-button" role="button">
+            <i class="fa-solid fa-phone"></i>
+          </a>
         </li>
       </ul>
     </nav>
     <main class="container">
-      <div class="grid">
+      <div class="grid" style="grid-gap: 1em">
         <div>
-          <img
-            src="https://source.unsplash.com/featured/?sushi"
-            alt="Menu Item 1"
-          />
+          <a
+            href="https://www.instagram.com/downtownsmithsfalls/p/Cv-VcIaOXKI/?img_index=1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <em>Tuesday, August 15, 2023</em>
+            <h2>Grand Opening</h2>
+            <img src="/images/grand_opening.jpeg" alt="Grand Opening" />
+            <br />
+            <br />
+            <img src="/images/sushi_and_menu.jpeg" alt="Sushi and Menu" />
+            <br />
+            <br />
+            <p>
+              Yukihana Sushi now open and ready to (sushi) roll in Downtown
+              Smiths Falls!!!
+              <br />
+              <br />
+              <em>@downtownsmithsfalls</em>
+            </p>
+          </a>
         </div>
+        <hr style="border: 1px solid rgba(255, 255, 255, 0.5); width: 100%" />
         <div>
-          <img
-            src="https://source.unsplash.com/featured/?sushi"
-            alt="Menu Item 2"
-          />
+          <a
+            href="https://www.insideottawavalley.com/news/sushi-restaurant-comes-to-smiths-falls/article_875fe014-d271-5fa4-9e03-d686a2c85ec6.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <em>Tuesday, August 1, 2023</em>
+            <h2>Sushi restaurant comes to Smiths Falls</h2>
+            <img src="/images/ryan_and_john.webp" alt="Ryan and John" />
+            <br />
+            <br />
+            <p>
+              “There is no sushi restaurant in this area,” said the restaurant’s
+              chef and owner Ryan Chung, who is working alongside his co-owner,
+              wife, Julie Jang, and son, John Chung, to open the highly
+              anticipated restaurant.
+            </p>
+            <p>
+              “Sushi is probably the most popular foreign food,” said Ryan, who
+              also cooks a wide range of Asian cuisines. “I could do Korean,
+              Chinese, Japanese sushi, but the most popular is sushi. Canadians
+              love sushi.”
+            </p>
+            <p>
+              The globe-trotting family has recently settled in Smiths Falls and
+              are looking forward to being a staple in the local restaurant
+              scene.
+            </p>
+            <p>
+              This is Ryan’s second time owning a restaurant. The first
+              restaurant he opened was in Los Angeles. The family, who is from
+              Korea originally, has lived in Beijing, China, then they moved to
+              Los Angeles, then Chicago, then to the Bracebridge in the Muskoka
+              region, then Cobourg, and finally Smiths Falls.
+              <br />
+              <br />
+              <em>Evelyn Harford @ Smiths Falls Record News</em>
+            </p>
+          </a>
         </div>
-        <div>
-          <img
-            src="https://source.unsplash.com/featured/?sushi"
-            alt="Menu Item 3"
-          />
-        </div>
-        <!-- More images as needed -->
       </div>
     </main>
     <footer class="container">
       <nav class="container-fluid">
         <ul>
-          <li><strong>Yukihana Sushi</strong></li>
+          <li>
+            <a href="/"><strong>Yukihana Sushi</strong></a>
+          </li>
         </ul>
         <ul>
-          <li><a href="/">Home</a></li>
           <li class="active"><a href="/about">About</a></li>
           <li>
             <a href="/menu">Menu</a>
           </li>
+          <li><a href="/contact">Contact</a></li>
           <li class="button">
-            <a href="/contact" role="button">Contact</a>
+            <a href="tel:6132830699" class="call-button" role="button">
+              <i class="fa-solid fa-phone"></i>
+            </a>
           </li>
         </ul>
       </nav>
     </footer>
+    <script
+      src="https://kit.fontawesome.com/a2f5a66a0f.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

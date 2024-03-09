@@ -13,21 +13,33 @@
   <body>
     <style>
       .grid {
+        grid-gap: 0.5em;
         row-gap: 2em;
+        align-items: center;
+      }
+      @media (min-width: 768px) {
+        .grid {
+          grid-gap: 2em;
+          grid-template-columns: auto auto;
+        }
       }
     </style>
-    <nav class="container-fluid">
+    <nav class="container">
       <ul>
-        <li><strong>Yukihana Sushi</strong></li>
+        <li>
+          <a href="/"><strong>Yukihana Sushi</strong></a>
+        </li>
       </ul>
       <ul>
-        <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
         <li class="active">
           <a href="/menu">Menu</a>
         </li>
+        <li><a href="/contact">Contact</a></li>
         <li class="button">
-          <a href="/contact" role="button">Contact</a>
+          <a href="tel:6132830699" class="call-button" role="button">
+            <i class="fa-solid fa-phone"></i>
+          </a>
         </li>
       </ul>
     </nav>
@@ -74,30 +86,41 @@
             <img src="/images/menu/menu5.jpg" alt="Menu Item 5" style="width: 80%;" />
           </a>
         </div>
-    
+        <!-- WINTER BITES menu page, currently disabled -->
+        <!--
         <div>
           <a href="/images/menu/winter_bites_menu.jpg" target="_blank" rel="noopener noreferrer">
             <img src="/images/menu/winter_bites_menu.jpg" alt="Winter Bites Menu" style="width: 80%;" />
           </a>
         </div>
+         -->
+      </div>
     </main>
 
     <footer class="container">
       <nav class="container-fluid">
         <ul>
-          <li><strong>Yukihana Sushi</strong></li>
+          <li>
+            <a href="/"><strong>Yukihana Sushi</strong></a>
+          </li>
         </ul>
         <ul>
-          <li><a href="/">Home</a></li>
           <li><a href="/about">About</a></li>
           <li class="active">
             <a href="/menu">Menu</a>
           </li>
+          <li><a href="/contact">Contact</a></li>
           <li class="button">
-            <a href="/contact" role="button">Contact</a>
+            <a href="tel:6132830699" class="call-button" role="button">
+              <i class="fa-solid fa-phone"></i>
+            </a>
           </li>
         </ul>
       </nav>
     </footer>
+    <script
+      src="https://kit.fontawesome.com/a2f5a66a0f.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
